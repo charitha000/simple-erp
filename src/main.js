@@ -78,7 +78,7 @@ async function initApp() {
     }
 
     // Attach Logout Functionality
-    const logoutBtns = document.querySelectorAll('a[href="/index.html"], a[href="index.html"], .logout-btn, #logout-btn');
+    const logoutBtns = document.querySelectorAll('a[href="index.html"], a[href="index.html"], .logout-btn, #logout-btn');
     logoutBtns.forEach(btn => {
         if(btn.innerText.toLowerCase().includes('logout')) {
             btn.addEventListener('click', async (e) => {
